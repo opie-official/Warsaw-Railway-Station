@@ -1,6 +1,14 @@
+/**
+ * @file FirstPage.tsx
+ * @author OPIE
+ */
 import "./styles/first_page.css"
 
-
+/**
+ * @function FirstPage
+ * @constructor
+ * @description a component of first page
+ */
 export default function FirstPage(){
     return (
         <div id={"first-page"}>

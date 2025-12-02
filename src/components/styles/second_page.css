@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     /*justify-content: center;*/
+    gap: 5%;
 }
 
 
@@ -17,4 +18,22 @@
 
 #second-img{
 
+    width: 90%;
+    height: 35%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--red2);
+}
+#second-info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
 }
