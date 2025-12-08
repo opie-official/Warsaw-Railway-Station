@@ -76,7 +76,7 @@ function Page(props: {
                     <div className={"page1"}>
                         <div className={"image-container"}>
                             <img src=
-                                     {image.length != 0 ? image : `null`}
+                                     {image.length != 0 ? image : `null`} rel="preload"
                                  alt={""}
                             />
                         </div>
@@ -103,7 +103,7 @@ function Page(props: {
                 <div className={"page1"}>
                     <div className={"image-container2"}>
                         <img src=
-                                 {image.length != 0 ? other_image : `null`}
+                                 {image.length != 0 ? other_image : `null`} rel="preload"
                              alt={""}
                         />
                     </div>

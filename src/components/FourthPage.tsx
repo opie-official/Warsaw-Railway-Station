@@ -20,7 +20,7 @@ export default function FourthPage(props: {
             display: !props.is_book_open ? "flex" : "none",
         }}>
             <div id={"book"} onClick={props.cb}>
-                <img src={"/book_cover_1.png"} alt={""}/>
+                <img src={"/book_cover_1.png"} alt={""} rel="preload"/>
             </div>
             <p id={"book-hint"}>Нажмите на книгу, чтобы ознакомиться с 4 историями</p>
         </div>
