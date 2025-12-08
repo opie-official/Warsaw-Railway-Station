@@ -1,0 +1,33 @@
+#fourth-page{
+    background: var(--bg);
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+#book{
+    width: 35%;
+    height: 80%;
+    /*background: var(--white);*/
+    /*border: 2px solid var(--red2);*/
+    &>img{
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+#book-hint{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+    font-size: 13pt;
+    color: #424242
+}

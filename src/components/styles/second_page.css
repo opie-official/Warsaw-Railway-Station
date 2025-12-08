@@ -1,6 +1,6 @@
 #second-page {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background: var(--bg);
     display: flex;
     flex-direction: column;
@@ -9,27 +9,33 @@
     gap: 5%;
 }
 
-
-#second-about{
-    font-family: "Merriweather", serif;
-    font-size: 20pt;
-    color: black;
-}
-
-#second-img{
-
-    width: 90%;
-    height: 35%;
-    background: white;
+#second-img {
+    width: 100%;
+    height: 40%;
+    background: rgba(0,0,0,90%);
+    filter: brightness(0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--red2);
+    /*border: 2px solid var(--red2);*/
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &>img{
+        width: 100%;
+        height: 100%;
+    }
+
 }
-#second-info{
+.title-second{
+    position: absolute;
+}
+
+#second-info {
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

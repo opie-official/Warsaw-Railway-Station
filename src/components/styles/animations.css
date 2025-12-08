@@ -1,0 +1,39 @@
+.animation-page {
+    animation: page 0.7s;
+    position: relative;
+
+}
+
+.none {
+    opacity: 0 !important;
+}
+
+
+@keyframes page {
+    0% {
+        opacity: 0;
+        top: 10%;
+    }
+
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.animation-book{
+    animation: book 0.4s;
+    opacity: 1;
+    scale: 1;
+}
+
+@keyframes book {
+    0%{
+        scale: 0.7;
+        opacity: 0.7;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
