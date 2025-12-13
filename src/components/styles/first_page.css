@@ -24,13 +24,33 @@
     font-size: 50pt;
     width: 100%;
     text-align: center;
-    color: var(--red1)
+    color: var(--red1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (width<512px){
+        font-size: 30pt;
+    }
+
 }
+
+
+
+
+
+
 #label-p{
     font-family: "Playfair Display", serif;
     font-size: 20pt;
     color: var(--red1);
     text-align: center;
+
+    @media (width<512px){
+        font-size: 15pt;
+    }
+
 }
 
 #label-years{
@@ -44,4 +64,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
+    @media(width<512px){
+        font-size: 15pt;
+    }
 }

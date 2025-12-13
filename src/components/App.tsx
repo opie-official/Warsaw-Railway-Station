@@ -11,6 +11,7 @@ import Footer from "./Footer.tsx";
 import FourthPage from "./FourthPage.tsx";
 import BookPage from "./BookPage.tsx";
 import NavBar from "./navBar.tsx";
+
 /**
  * @function App
  * @constructor
@@ -25,6 +26,7 @@ export default function App() {
     const [fifthVisible, setFifthVisible] = useState(false);
 
     const [isBook, setIsBook]=useState(false);
+    const [current, setCurrent]=useState(0);
 
     const ref = useRef<HTMLDivElement>(null);
     const ref1 = useRef<HTMLDivElement>(null);
@@ -54,7 +56,7 @@ export default function App() {
             })
             const arr = [ref1, ref2, ref3, ref4, ref5]
 
-            for (let i in arr) {
+            for (const i in arr) {
                 if (arr[i].current){
                     observer.observe(arr[i].current);
                 }
@@ -63,6 +65,36 @@ export default function App() {
             return () => observer.disconnect();
         },
         []);
+
+
+    useEffect(() => {
+        const root = ref.current;
+        if (!root) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                if (entry.target == ref1.current) setCurrent(0)
+                if (entry.target == ref2.current) setCurrent(1)
+                if (entry.target == ref3.current) setCurrent(2)
+                if (entry.target == ref4.current) setCurrent(3)
+                if (entry.target == ref5.current) setCurrent(3)
+            })
+        },{
+            root,
+            threshold:0.3
+        });
+
+        const arr = [ref1, ref2, ref3, ref4, ref5]
+
+        for (const i in arr) {
+            if (arr[i].current){
+                observer.observe(arr[i].current);
+            }
+        }
+        return () => observer.disconnect();
+
+    }, []);
 
 
     function openBook(){
@@ -77,7 +109,7 @@ export default function App() {
 
     return (
         <>
-            <NavBar refs={refs} app={ref}/>
+            <NavBar current={current} refs={refs} app={ref} is_book_open={isBook}/>
         <div ref={ref} id={"app"}>
             <FirstPage ref={ref1} visible={firstVisible} is_book_open={isBook}/>
             <SecondPage ref={ref2} visible={secondVisible} is_book_open={isBook}/>

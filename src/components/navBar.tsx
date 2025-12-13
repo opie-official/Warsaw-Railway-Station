@@ -1,15 +1,30 @@
+/**
+ * @file navBar.tsx
+ * @author OPIE
+ */
+
+
 import "./styles/nav_bar.css"
 import React from "react";
 
 
-
+/**
+ * @interface BtProps
+ * @desc interface for NavButton props
+ */
 interface BtProps{
     index: number;
     ref_: React.RefObject<HTMLDivElement|null>;
     app: React.RefObject<HTMLDivElement | null>;
+    is_current: boolean
 }
 
-
+/**
+ * @function NavButton
+ * @param props
+ * @constructor
+ * @desc a component of navigation bar button
+ */
 function NavButton(props: BtProps){
 
     function click(){
@@ -24,25 +39,35 @@ function NavButton(props: BtProps){
         })
     }
     return (
-        <button className={"nav-button"} onClick={click}>
+        <button className={props.is_current? "nav-button-cur":"nav-button"} onClick={click}>
             {props.index + 1}
         </button>
     )
 }
 
-
+/**
+ * @interface MainProps
+ * @desc interface for props of NavBar
+ */
 interface MainProps{
     refs: React.RefObject<HTMLDivElement|null>[]
     app: React.RefObject<HTMLDivElement|null>
+    is_book_open:boolean
+    current: number
 }
 
 
-
+/**
+ * @function NavBar
+ * @param props
+ * @constructor
+ * @desc a component of navigation panel
+ */
 export default function NavBar(props: MainProps){
     return (
-        <div id={"nav-bar"}>
+        <div id={"nav-bar"} className={props.is_book_open? "none":""}>
             {props.refs.map((elem, i)=>{
-                return <NavButton key={i} index={i} ref_={elem} app={props.app}/>
+                return <NavButton is_current={props.current==i} key={i} index={i} ref_={elem} app={props.app}/>
             })}
         </div>
     )

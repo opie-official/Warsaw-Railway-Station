@@ -1,6 +1,5 @@
 import "./styles/fourth_page.css"
 
-import type {PageProps} from "../core.ts";
 import React from "react";
 
 

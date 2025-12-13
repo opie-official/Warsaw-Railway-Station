@@ -5,7 +5,6 @@
 import "./styles/first_page.css"
 import "./styles/animations.css"
 import type {PageProps} from "../core.ts";
-// import {motion} from "framer-motion";
 /**
  * @function FirstPage
  * @constructor

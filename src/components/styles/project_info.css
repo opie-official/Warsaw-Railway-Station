@@ -1,4 +1,4 @@
-.project-info{
+.project-info {
     background: var(--white);
     width: 30%;
     height: 90%;
@@ -8,28 +8,39 @@
     flex-direction: column;
     /*border: 2px solid var(--red2);*/
     border-radius: 20px;
-    filter: drop-shadow(1px 4px 4px rgba(0,0,0,0.3));
+    filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.3));
     gap: 5%;
-    &>img{
+
+    & > img {
         margin-top: 5%;
         width: 15%;
+        @media (width < 512px) {
+            width: 40%;
+        }
     }
 
 }
 
 
-.project-label{
+.project-label {
     font-family: "Merriweather", serif;
     font-size: 20pt;
     font-weight: bold;
     text-align: center;
+    @media (width < 512px) {
+        font-size: 9pt;
+        width: 95%;
+    }
 }
 
-.project-text{
+.project-text {
     width: 90%;
     text-align: center;
     font-family: "Playfair Display", serif;
     font-size: 15pt;
+    @media(width<512px){
+        font-size: 10pt;
+    }
 }
 
 

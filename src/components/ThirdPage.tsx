@@ -20,10 +20,9 @@ export default function ThirdPage(props: PageProps) {
         <div ref={props.ref} id={"third-page"} className={props.visible? "animation-page" :"none"} style={{
             display: !props.is_book_open ? "flex" : "none",
         }}>
-            <Title title={"О Проекте"} icon={"book.svg"}/>
+            <Title title={"О Проекте"} icon={2}/>
             <p id={"project-info"}>
-                Этот проект — нечто большее, чем простой урок истории. Он переосмысливает цифровое повествование, суть
-                которого заключается в четырех историях, ожидающих в архивах ниже
+                Наша цель — пробудить ваш интерес к историям Варшавского вокзала и сделать его прошлое понятным и увлекательным для каждого. В рамках проекта мы стремимся оживить былые времена, соединяя современный веб-дизайн и интерактивные инструменты.
             </p>
             <div id={"project-aspects"}>
                 <ProjectInfo icon={"/script.svg"} label={"Интересные истории"}

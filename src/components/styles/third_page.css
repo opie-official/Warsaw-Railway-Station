@@ -24,6 +24,10 @@
     font-family: "Playfair Display", serif;
     font-size: 18pt;
 
+    @media(width<512px){
+        font-size: 15pt;
+    }
+
 }
 
 #project-aspects{

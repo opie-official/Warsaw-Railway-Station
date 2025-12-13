@@ -14,5 +14,5 @@ import React from "react";
 export interface PageProps {
     visible: boolean;
     ref: React.RefObject<HTMLDivElement | null>
-    is_book_open
+    is_book_open: boolean
 }

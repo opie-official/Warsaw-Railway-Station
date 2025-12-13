@@ -31,12 +31,18 @@
 .block-label{
     font-family: "Merriweather", serif;
     font-size: 13pt;
+    @media(width<512px){
+        font-size: 7pt;
+    }
 
 }
 
 .block-text{
     font-family: "Playfair Display", serif;
     font-size: 11pt;
+    @media(width<512px){
+        font-size: 8pt;
+    }
 
 }
 
@@ -71,6 +77,9 @@
     white-space: pre;
     &>span{
         font-size: 15pt;
+        @media(width<512px){
+            font-size: 10pt;
+        }
     }
 }
 
@@ -104,10 +113,21 @@
     color: var(--red2);
     font-size: 20pt;
     font-weight: bold;
+    @media(width<512px){
+        font-size: 15pt;
+    }
 }
 
 .block2-text{
     font-family: "Playfair Display", serif;
     color: black;
     font-size: 15pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media(width<512px){
+        font-size: 10pt;
+    }
 }

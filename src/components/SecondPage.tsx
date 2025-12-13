@@ -19,7 +19,7 @@ export default function SecondPage(props: PageProps){
         <div ref={props.ref} id={"second-page"} className={props.visible? "animation-page" :"none"} style={{
             display: !props.is_book_open ? "flex" : "none",
         }}>
-           <Title color={"white"} className={"title-second"} title={"О Вокзале"} icon={"info.svg"}/>
+           <Title color={"white"} className={"title-second"} title={"О Вокзале"} icon={1}/>
             <div id={"second-img"}>
                 <img src={"/railway.png"} rel="preload"/>
             </div>
