@@ -1,91 +1,91 @@
-![](./docs/images/theme.png)
+![](../images/theme.png)
 
-# Warsaw Railway Station
+# Варшавский Вокзал
 
-[Русская версия](./docs/readme/README-RU.md)
+[English version](../../README.md)
 
-1. [About the project](#1-about-the-project)
-2. [Technologies](#2-technologies)
-3. [How to start](#3-how-to-launch)
-4. [Implementation](#4-implementation)
-5. [Book](#5-book)
-6. [Team](#6-the-team)
+1. [О проекте](#1-о-проекте)
+2. [Технологии](#2-технологии)
+3. [Как запустить](#3-как-запустить)
+4. [Реализация](#4-реализация)
+5. [Книга](#5-книга)
+6. [Команда](#6-команда)
 
 
 
-[Open website](https://warsaw-railway-station.vercel.app/)
+[Открыть сайт](https://warsaw-railway-station.vercel.app/)
 
-## 1. About the project
+## 1. О проекте
 
-An interactive historical web project dedicated to the Warsaw Railway Station in Saint Petersburg.  
-The project was developed as part of a university course and consists of a website with a visual
-narrative and an interactive book telling the story of two brothers who were porters at the station in 1921.
+Интерактивный исторический веб-проект, посвящённый Варшавскому вокзалу в Санкт-Петербурге.  
+Проект разработан в рамках университетского курса и представляет собой сайт с визуальным 
+повествованием и интерактивной книгой, рассказывающей истории двух братьев — носильщиков вокзала в 1921 году.
 
-## 2. Technologies
+## 2. Технологии
+
 - React
 - TypeScript
 - Vite
 - CSS / SCSS 
 
-## 3. How to launch
+## 3. Как запустить
 
-1. Download the repository
+1. Скачать репозиторий
 ```shell
 git clone https://github.com/opie-official/Warsaw-Railway-Station.git
 ```
-2. Download dependencies
+2. Скачать зависимости
 ```shell
 npm i
 ```
-3. Run and go to the desired address
+3. Запустить и перейти по нужному адресу
 ```shell
 npm run dev
 ```
 
-## 4. Implementation
+## 4. Реализация
 
-The following sections were created on the website:
+На сайте были созданы следующие секции:
 
-1. Title page
-2. Information about the station
-3. Information about the project
-4. Interactive book (with footer)
+1. Титульный лист
+2. Информация о вокзале
+3. Информация о проекте
+4. Интерактивная книга (вместе с футером)
 
-### Title page
-![](./docs/images/image1.png)
+### Титульный лист
+![](../images/image1.png)
 
-The title page shows the name of the station and its image
-
-
-### Information about the station
-![](./docs/images/image2.png)
-This section also contains an image of the station and four small blocks with brief information about the station.
-![](./docs/images/image3.png)
+На титульном листе представлено название вокзала и его изображение
 
 
-### Information about the project
-![](./docs/images/image4.png)
-This section provides brief information about the project itself, along with its features.
-
-### Interactive book
-![](./docs/images/image5.png)
-This section contains a closed book. Click on it to start reading stories ([more here](#book)).
-### Footer
-![](./docs/images/image6.png)
-Service information
+### Информация о вокзале
+![](../images/image2.png)
+В этой секции также находится изображение вокзала и 4 небольших блока с краткой информации о вокзале
+![](../images/image3.png)
 
 
-## 5. Book
-![](./docs/images/book1.png)
-The book has 4 pages, each of which tells different short stories.
-When you click on the buttons at the bottom, the pages turn with a special animation.
+### Информация о проекте
+![](../images/image4.png)
+В этой секции представлена небольшая информация о самом проекте вместе с его особенностями.
 
-The stories are presented below:
+### Интерактивная книга
+![](../images/image5.png)
+В этой секции находится закрытая книга, нажав на которую, можно начать читать истории ([подробнее здесь](#книга))
+### Футер
+![](../images/image6.png)
+Служебная информация 
 
+
+## 5. Книга
+![](../images/book1.png)
+В книге есть 4 страницы, на каждой из которых рассказываются разные короткие истории. 
+При нажатии кнопок снизу, страницы переворачиваются со специальной анимацией.
+
+Истории представлены ниже:
 
 #### Предыстория
 
-> Братья с самого детства жили только со своей любимой мамой.
+> Братья с самого детства жили только со своей любимой мамой. 
 Семья была не очень-то и состоятельна, братья всегда хотели порадовать чем-нибудь маму.
 Узнав, что у нее скоро день рождения, они захотели купить ей красивый подарок.
 Но семья их не богата - поэтому братья решили найти работу.
@@ -94,21 +94,19 @@ The stories are presented below:
 ####  История 1 - как возвращали зонтик
 
 > В один день, пока они работали на вокзале, их задел красиво одетый мужчина.
-Извинившись перед красиво-одетым мужчиной, они обратили внимание на то,
-что он оставил зонтик на лавочке. В их головах промелькнула мысль:
+Извинившись перед красиво-одетым мужчиной, они обратили внимание на то, 
+что он оставил зонтик на лавочке. В их головах промелькнула мысль: 
 «оставить ли нам его или нет?». Однако они сразу вспомнили слова мамы о том,
-что надо жить, по совести! Осознав ситуацию, они побежали искать его.
-Осмотрев толпу, Братья увидели, как он собирался сесть в поезд.
-Они окликнули мужчину, подбегая к нему. Он, услышав их, обернулся и решил подождать их,
-не протягивая свой билет проводнице. Добежав до него и, запыхаясь,
+что надо жить, по совести! Осознав ситуацию, они побежали искать его. 
+Осмотрев толпу, Братья увидели, как он собирался сесть в поезд. 
+Они окликнули мужчину, подбегая к нему. Он, услышав их, обернулся и решил подождать их, 
+не протягивая свой билет проводнице. Добежав до него и, запыхаясь, 
 они передали ему его потерянную вещь.
-
 
 
 #### История 2 - как работали
 
 > Мальчики, как обычно, работали: подсказывали дорогу, таскали вещи итд. Вдруг они увидели, как ко входу подъехала очень высокопоставленная дама. Братья подбежали к ней, решив, что смогу заработать денег, помогая ей донести ее вещи. Они предложили свою помощь – дама не отказала им и вдогонку сказала: «справитесь быстро – получите хорошие чаевые». Обрадовавшись, мальчики поспешили выполнить работу. Однако, в спешке они не обратили внимание, как из открытой сумки что-то выпало. Все вещи быстро принесли, и дама осталась довольна, и добавила им немного сверху (чего-то). Она села в вагон, не знав о потере дорогой ей вещи.
-
 
 
 #### История 3 - как покупали подарок
@@ -117,6 +115,7 @@ The stories are presented below:
 Мальчики на радостях от сказанного отдали все накопленные деньги кондитеру. Посчитав, кондитер понял, что немного не хватает, но, увидев счастливые лица мальчиков, он слегка улыбнулся и сказал  заходить за тортом через неделю.
 
 
-## 6. The team
 
-The project was completed by a team of four students as part of a course (I was responsible for creating the website itself).
+## 6. Команда
+
+Проект выполнен командой из 4 студентов в рамках учебного курса (я отвечал за создание самого сайта).
