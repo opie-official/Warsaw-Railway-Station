@@ -1,4 +1,4 @@
-![](./docs/images/theme.png)
+![](./docs/images/theme_1.png)
 
 # Warsaw Railway Station
 
@@ -52,31 +52,31 @@ The following sections were created on the website:
 4. Interactive book (with footer)
 
 ### Title page
-![](./docs/images/image1.png)
+![](./docs/images/image_1.png)
 
 The title page shows the name of the station and its image
 
 
 ### Information about the station
-![](./docs/images/image2.png)
+![](./docs/images/image_2.png)
 This section also contains an image of the station and four small blocks with brief information about the station.
-![](./docs/images/image3.png)
+![](./docs/images/image_3.png)
 
 
 ### Information about the project
-![](./docs/images/image4.png)
+![](./docs/images/image_4.png)
 This section provides brief information about the project itself, along with its features.
 
 ### Interactive book
-![](./docs/images/image5.png)
-This section contains a closed book. Click on it to start reading stories ([more here](#book)).
+![](./docs/images/image_5.png)
+This section contains a closed book. Click on it to start reading stories ([more here](#5-book)).
 ### Footer
-![](./docs/images/image6.png)
+![](./docs/images/image_6.png)
 Service information
 
 
 ## 5. Book
-![](./docs/images/book1.png)
+![](./docs/images/book_1.png)
 The book has 4 pages, each of which tells different short stories.
 When you click on the buttons at the bottom, the pages turn with a special animation.
 
