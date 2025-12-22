@@ -31,7 +31,7 @@ const content: PageContent[] = [
     {
         label: "История 1 - как возвращали зонтик",
         text: "В один день, пока они работали на вокзале, их задел красиво одетый мужчина. Извинившись перед красиво-одетым мужчиной, они обратили внимание на то, что он оставил зонтик на лавочке. В их головах промелькнула мысль: «оставить ли нам его или нет?». Однако они сразу вспомнили слова мамы о том, что надо жить, по совести! Осознав ситуацию, они побежали искать его. Осмотрев толпу, Братья увидели, как он собирался сесть в поезд. Они окликнули мужчину, подбегая к нему. Он, услышав их, обернулся и решил подождать их, не протягивая свой билет проводнице. Добежав до него и запыхаясь, они передали ему его потерянную вещь.\n",
-        image: "null",
+        image: "/railway2.png",
     },
     {
         label: "История 2 - как работали",
@@ -231,7 +231,7 @@ export default function BookPage(props: { isBook: boolean, cb: () => void, page_
     return (
         <div id={"book-page"} style={{display: props.isBook ? "flex" : "none"}}>
             <div id={"pages"} className={props.isBook ? "animation-book" : ""}>
-                {content.map((obj: PageContent, index) => {
+                {content.map((_: PageContent, index) => {
                     return <Page isBook={props.isBook}  page={page} index={index} key={index}
                                  cov={cov} onFlipEnd={handleFlipEnd}/>
                 })}

@@ -17,8 +17,7 @@
     align-items: center;
     justify-content: center;
     gap:0;
-    /*margin-top: 5%;*/
-    perspective: 1500px; /* обязательна перспектива */
+    perspective: 1500px;
     position: relative;
 }
 
@@ -34,6 +33,10 @@
     gap: 5%;
     background: var(--red2);
     border-radius: 20pt;
+    @media (width<700px){
+        width: 70%;
+        height: 6.5%;
+    }
 }
 
 .page{
@@ -48,6 +51,9 @@
     position: relative;
     /*overflow: hidden;*/
     transform-style: preserve-3d;
+    @media(width<700px){
+        height: 60%;
+    }
 }
 .page-container, .page-decorator, .page-other{
     position: absolute;
@@ -102,8 +108,12 @@
 
 .page-label, .page-label2{
     margin-top: 5%;
+    margin-left: 10%;
     font-family: "Merriweather", serif;
-    font-size: clamp(10pt, 20pt, 25pt);
+    font-size: 2rem;
+    @media (width<700px){
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -111,14 +121,18 @@
     margin-top: 3%;
     font-family: "Playfair Display", serif;
 
-    font-size: 15pt;
+    font-size: 1.4rem;
     width: 90%;
     display:flex;
     flex-direction: column;
     align-items: start;
     height: 50%;
     text-align: start;
+    @media (width<700px){
+        font-size: 1rem;
+    }
 }
+
 
 
 .image-container, .image-container2{
@@ -132,7 +146,6 @@
     &>img{
         width: 100%;
         height: 100%;
-        /*object-fit: contain;*/
     }
 }
 
@@ -142,7 +155,7 @@
     border-radius: 50px;
     border: 0 solid;
     font-family: "Playfair Display", serif;
-    font-size: clamp(10px, 20px, 30px);
+    font-size: 1.2rem;
     background: var(--red1);
     opacity: 0.3;
     color: white;
@@ -166,14 +179,13 @@
         height: 0;
     }
     scrollbar-width: none;
-    /*backface-visibility: hidden;*/
     transform-style: preserve-3d;
 }
 
 
 #page-counter{
     font-family: "Playfair Display", serif;
-    font-size: 20pt;
+    font-size: 1.5rem;
     color: var(--white);
     display: flex;
     flex-direction: column;

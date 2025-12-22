@@ -32,16 +32,16 @@
 
 .block-label{
     font-family: "Merriweather", serif;
-    font-size: 13pt;
+    font-size: 1.5rem;
     @media(width<512px){
-        font-size: 7pt;
+        font-size: 1rem;
     }
 
 }
 
 .block-text{
     font-family: "Playfair Display", serif;
-    font-size: 11pt;
+    font-size: 1.2rem;
     @media(width<512px){
         font-size: 8pt;
     }
@@ -78,9 +78,9 @@
     text-wrap: nowrap;
     white-space: pre;
     &>span{
-        font-size: 15pt;
+        font-size: 1rem;
         @media(width<512px){
-            font-size: 10pt;
+            font-size: 0.8rem;
         }
     }
 }
@@ -113,17 +113,17 @@
 .block2-label{
     font-family: "Merriweather", serif;
     color: var(--red2);
-    font-size: 20pt;
+    font-size: 2rem;
     font-weight: bold;
     @media(width<512px){
-        font-size: 15pt;
+        font-size: 1.5rem;
     }
 }
 
 .block2-text{
     font-family: "Playfair Display", serif;
     color: black;
-    font-size: 15pt;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;

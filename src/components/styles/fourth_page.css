@@ -5,21 +5,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 5%;
+    margin-top: 5rem;
+
+    @media (width<1000px){
+        height: 60vh;
+    }
 }
 
 #book {
     width: 35%;
-    /*aspect-ratio: 1/2;*/
-    height: 80%;
-    /*background: var(--white);*/
-    /*border: 2px solid var(--red2);*/
-
+    height: 50rem;
     & > img {
         width: 100%;
         height: 100%;
 
+    }
+    @media (width<700px){
+        width: 40%;
+        height: 43rem;
     }
 }
 
@@ -30,9 +35,9 @@
     justify-content: center;
     font-family: "Playfair Display", serif;
     font-weight: lighter;
-    font-size: 13pt;
+    font-size: 1.1rem;
     color: #424242;
     @media (width < 512px) {
-        font-size: 8pt;
+        font-size: 1rem;
     }
 }
