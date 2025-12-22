@@ -67,13 +67,6 @@ function Page(props: {
 
     const [state, setState]=useState<-2|-1|0|1|2>(0);
     const canFinish = page === index && isBook && cov !== 0;
-
-    const last = content.length - 1;
-    const prevI = Math.max(page - 1, 0);
-    const nextI = Math.min(page + 1, last);
-    const currI = page;
-
-
     const next = content[page+1<=3? page+1: 3];
     const prev = content[page-1>=0? page-1: 0];
     const cur = content[page];

@@ -3,9 +3,9 @@
  * @author OPIE
  */
 import "./styles/app.css"
-import FirstPage from "./FirstPage.tsx";
+import NewFirstPage from "./NewFirstPage.tsx";
 import SecondPage from "./SecondPage.tsx";
-import React, {useEffect, useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import ThirdPage from "./ThirdPage.tsx";
 import Footer from "./Footer.tsx";
 import FourthPage from "./FourthPage.tsx";
@@ -111,7 +111,7 @@ export default function App() {
         <>
             <NavBar current={current} refs={refs} app={ref} is_book_open={isBook}/>
         <div ref={ref} id={"app"}>
-            <FirstPage ref={ref1} visible={firstVisible} is_book_open={isBook}/>
+            <NewFirstPage ref={ref1} visible={firstVisible} is_book_open={isBook}/>
             <SecondPage ref={ref2} visible={secondVisible} is_book_open={isBook}/>
             <ThirdPage ref={ref3} visible={thirdVisible} is_book_open={isBook}/>
             <FourthPage visible={fourthVisible} ref={ref4} cb={openBook} is_book_open={isBook}/>

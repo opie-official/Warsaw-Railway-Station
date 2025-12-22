@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 :root{
-    --bg: #FFF7F4;
+    --bg: #FAF5F0;
+    /*--bg: #FFF7F4;*/
     --red1: #4C1313;
     --red2: #824343;
     --white: #ffffff;
