@@ -21,7 +21,7 @@ export default function SecondPage(props: PageProps){
         }}>
            <Title color={"white"} className={"title-second"} title={"О Вокзале"} icon={1}/>
             <div id={"second-img"}>
-                <img src={"/railway.png"} rel="preload"/>
+                <img src={"/railway_5.jpg"} rel="preload"/>
             </div>
             <div id={"second-info"}>
                 {[1,2,3,4].map(

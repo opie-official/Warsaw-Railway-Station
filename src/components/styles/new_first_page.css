@@ -40,8 +40,10 @@
     overflow: hidden;
 
     & > img {
+        position: relative;
+        top: -20%;
         width: 100%;
-        height: 100%;
+        /*height: 100%;*/
     }
 
     @media (width<1000px){

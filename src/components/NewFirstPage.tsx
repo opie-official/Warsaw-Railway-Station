@@ -20,7 +20,7 @@ export default function newFirstPage(props: PageProps) {
                 <img src={"/logosvg.svg"}/>
             </div>
             <div id={"new-first-img"}>
-                <img src={"/railway.png"}/>
+                <img src={"/railway_6.jpg"}/>
             </div>
         </div>
     )

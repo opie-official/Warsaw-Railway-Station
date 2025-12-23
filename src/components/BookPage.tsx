@@ -36,7 +36,7 @@ const content: PageContent[] = [
     {
         label: "История 2 - как работали",
         text: "Мальчики как обычно работали: подсказывали дорогу, таскали вещи итд. Вдруг они увидели, как ко входу подъехала очень высокопоставленная дама. Братья подбежали к ней, решив, что смогу заработать денег, помогая ей донести ее вещи. Они предложили свою помощь – дама не отказала им и вдогонку сказала: «справитесь быстро – получите хорошие чаевые». Обрадовавшись, мальчики поспешили выполнить работу. Однако, в спешке они не обратили внимание, как из открытой сумки что-то выпало. Все вещи быстро принесли, и дама осталась довольна, и добавила им немного сверху (чего-то). Она села в вагон, не знав о потере дорогой ей вещи.\n",
-        image: "null",
+        image: "/animation.gif",
     },
     {
         label: "История 3 - как покупали подарок",
@@ -65,10 +65,10 @@ function Page(props: {
 
     const d = 0.4;
 
-    const [state, setState]=useState<-2|-1|0|1|2>(0);
+    const [state, setState] = useState<-2 | -1 | 0 | 1 | 2>(0);
     const canFinish = page === index && isBook && cov !== 0;
-    const next = content[page+1<=3? page+1: 3];
-    const prev = content[page-1>=0? page-1: 0];
+    const next = content[page + 1 <= 3 ? page + 1 : 3];
+    const prev = content[page - 1 >= 0 ? page - 1 : 0];
     const cur = content[page];
 
 
@@ -79,7 +79,7 @@ function Page(props: {
 
                 <motion.div
                     className="page1-a"
-                    style={{ originX: 1 }}
+                    style={{originX: 1}}
                     initial={false}
                     animate={{
                         rotateY:
@@ -88,9 +88,9 @@ function Page(props: {
                                     90
                     }}
                     transition={{
-                        duration: (cov===-1 || cov==1) && (state==-1 || state==1)?d:
-                            cov==1 && state==0? d:
-                                cov==-1 && state==0?d:
+                        duration: (cov === -1 || cov == 1) && (state == -1 || state == 1) ? d :
+                            cov == 1 && state == 0 ? d :
+                                cov == -1 && state == 0 ? d :
                                     0,
                         delay: (cov === 1) ? d : 0,
                     }}
@@ -104,8 +104,27 @@ function Page(props: {
                 >
                     <div className={"page1"}>
                         <div className={"image-container"}>
-                            <img src={cov==1?next.image: cur.image} rel="preload"
-                                 alt={""}
+
+                            <div className={"image-rivet top-left"}>
+                                <img src={"/rivet.png"} loading={"eager"}/>
+                            </div>
+                            <div className={"image-rivet top"}>
+                                <img src={"/rivet.png"} loading={"eager"}/>
+                            </div>
+                            <div className={"image-rivet top-right"}>
+                                <img src={"/rivet.png"} loading={"eager"}/>
+                            </div>
+                            <div className={"image-rivet bot-left"}>
+                                <img src={"/rivet.png"} loading={"eager"}/>
+                            </div>
+                            <div className={"image-rivet bot"}>
+                                <img src={"/rivet.png"} loading={"eager"}/>
+                            </div>
+                            <div className={"image-rivet bot-right"}>
+                                <img src={"/rivet.png"} loading={"eager"}/>
+                            </div>
+                            <img src={cov == 1 ? next.image : cur.image} rel="preload"
+                                 alt={""} loading={"eager"}
                             />
                         </div>
                     </div>
@@ -121,10 +140,10 @@ function Page(props: {
                                     -90
                     }}
                     transition={{
-                        duration: cov!==0 && state!==0?d:
-                            cov==-1 && state==0? d:
-                                cov==1 && state==0?d:
-                                0,
+                        duration: cov !== 0 && state !== 0 ? d :
+                            cov == -1 && state == 0 ? d :
+                                cov == 1 && state == 0 ? d :
+                                    0,
                         delay: (cov === -1) ? d : 0,
                     }}
                     onAnimationComplete={() => {
@@ -137,26 +156,47 @@ function Page(props: {
                 >
 
                     <div className={"page2"}>
-                        <p className={"page-label"}>{cov==1?cur.label: prev.label}</p>
-                        <p className={"page-text"}>{cov == 1 ? cur.text: prev.text}</p>
+                        <p className={"page-label"}>{cov == 1 ? cur.label : prev.label}</p>
+                        <p className={"page-text"}>{cov == 1 ? cur.text : prev.text}</p>
                     </div>
                 </motion.div>
             </div>}
-        <div className={"page-other"}>
-            <div className={"page1"}>
-                <div className={"image-container2"}>
-                    <img src={cov==1? cur.image: cov==-1?prev.image:cur.image} rel="preload"
-                         alt={""}
-                    />
+            <div className={"page-other"}>
+                <div className={"page1"}>
+
+                    <div className={"image-container2"}>
+
+                        <div className={"image-rivet top-left"}>
+                            <img src={"/rivet.png"} loading={"eager"}/>
+                        </div>
+                        <div className={"image-rivet top"}>
+                            <img src={"/rivet.png"} loading={"eager"}/>
+                        </div>
+                        <div className={"image-rivet top-right"}>
+                            <img src={"/rivet.png"} loading={"eager"}/>
+                        </div>
+                        <div className={"image-rivet bot-left"}>
+                            <img src={"/rivet.png"} loading={"eager"}/>
+                        </div>
+                        <div className={"image-rivet bot"}>
+                            <img src={"/rivet.png"} loading={"eager"}/>
+                        </div>
+                        <div className={"image-rivet bot-right"}>
+                            <img src={"/rivet.png"} loading={"eager"}/>
+                        </div>
+
+                        <img src={cov == 1 ? cur.image : cov == -1 ? prev.image : cur.image} rel="preload"
+                             alt={""} loading={"eager"}
+                        />
+                    </div>
+                </div>
+                <div className={"page2"}>
+                    <p className={"page-label"}>{cov == 1 ? next.label : cur.label}</p>
+                    <p className={"page-text"}>{cov == 1 ? next.text : cur.text}</p>
                 </div>
             </div>
-            <div className={"page2"}>
-                <p className={"page-label"}>{cov==1?next.label:cur.label}</p>
-                <p className={"page-text"}>{cov==1?next.text:cur.text}</p>
-            </div>
         </div>
-    </div>
-)
+    )
 
 }
 
@@ -185,7 +225,6 @@ export default function BookPage(props: { isBook: boolean, cb: () => void, page_
 
     const [prev, setPrev] = useState("Закрыть книгу");
     const [next, setNext] = useState(`Следующая`);
-
 
 
     function changePage(i: number) {
@@ -232,7 +271,7 @@ export default function BookPage(props: { isBook: boolean, cb: () => void, page_
         <div id={"book-page"} style={{display: props.isBook ? "flex" : "none"}}>
             <div id={"pages"} className={props.isBook ? "animation-book" : ""}>
                 {content.map((_: PageContent, index) => {
-                    return <Page isBook={props.isBook}  page={page} index={index} key={index}
+                    return <Page isBook={props.isBook} page={page} index={index} key={index}
                                  cov={cov} onFlipEnd={handleFlipEnd}/>
                 })}
             </div>
