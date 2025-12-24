@@ -25,11 +25,11 @@ export default function Footer(props: PageProps) {
             <div className={"block"} id={"footer-right"}>
                 <p className={"block-label"} id={"right-label"}>Подготовили</p>
                 <p className={"block-text"} id={"right-text"}>
-                   
+
                 </p>
             </div>
         </div>
-                <hr id={"footer-hr"}/>
+        <hr id={"footer-hr"}/>
         <div id={"footer-bottom"}>
             <div className={"block2"} id={"footer-left2"}>
                 <p className={"block2-label"} id={"left-label2"}>1853</p>
